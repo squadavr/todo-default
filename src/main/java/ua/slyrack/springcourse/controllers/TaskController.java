@@ -56,7 +56,7 @@ public class TaskController {
         return true;
     }
 
-    @GetMapping("/tasks/search?status=Done")
+    @GetMapping("/tasks/search")
     public ArrayList<Task> getByStatus(@RequestParam(name = "status") Status status) {
         ArrayList<Task> result = new ArrayList<>();
 
